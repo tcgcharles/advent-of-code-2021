@@ -16,7 +16,7 @@ func main() {
 	measurements := strings.Split(string(f), "\n")
 
 	var n int
-	for i := 2; i < len(measurements); i++ {
+	for i := 1; i < len(measurements); i++ {
 		b, err := strconv.Atoi(measurements[i-1])
 		if err != nil {
 			log.Fatal(err)
